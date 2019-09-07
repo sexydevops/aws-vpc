@@ -10,7 +10,11 @@
 ```
 ssh-copy-id username@ip
 ```
-
+or :
+```
+ssh-copy-id -i identity_file username@ip
+```
+if `identity_file` is not provided, it will specific the file `~/.ssh/id_rsa.pub`
 - Setup SSH config file: `vim ~/.ssh/config`
 
 ```
